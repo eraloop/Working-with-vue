@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/Working-with-vue/'
+    publicPath: '/api-url-shorten/'
 }
