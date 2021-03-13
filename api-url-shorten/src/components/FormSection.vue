@@ -50,6 +50,7 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
   data() {
     return {
@@ -66,20 +67,24 @@ export default {
 
   methods: {
     makeApiRequest: function (link) {
-      // console.log("fetch being made")
-      //   try{
-      //      console.log("fetch made to endpoint")
-      //       base = `https://api.shrtco.de/v2/shorten`
-      //       query = `?url=${link}`
 
-      //       const res = axios.get(base+query);
-      //       console.log(res)
-      //       return res
-      //       console.log("fetch completed from the endpoint")
-      //   }
-      //   catch(error){
-      //       throw new Error("Resource fetch failed... Invalid url provided or probably network error")
-      //   }
+        // try{
+        //     base = `https://api.shrtco.de/v2/shorten`
+        //     query = `?url=${link}`
+
+        //     axios
+        //         .get(base+query)
+        //         .then(res =>{
+        //             console.log(res)
+        //             return res
+        //         })
+        //     console.log(res)
+        //     return res
+            
+        // }
+        // catch(error){
+        //     throw new Error("Resource fetch failed... Invalid url provided or probably network error")
+        // }
 
       const base = `https://api.shrtco.de/v2/shorten`;
       const query = `?url=${link}`;
